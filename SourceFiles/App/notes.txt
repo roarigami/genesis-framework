@@ -1,0 +1,12 @@
+
+For autoloader to work:
+The class name must be the same as the file name
+If class has a different extension like .core.php
+it will need a separate autloader function for that extension
+
+// Check if class exists
+if(class_exists('GenFrame\Database\Migrations\UsersTable')){
+  echo "Class EXISTS";
+} else {
+  echo "Class does not exist";
+}

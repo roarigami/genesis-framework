@@ -1,0 +1,62 @@
+## Flag for GoDaddy
+Options +MultiViews
+
+## Remove .php extensions
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+## Redirect from .php extensions to non extensions
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteRule ^ /%1 [R=301,NE,L]
+
+## Remove .html extensions
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+## Redirect from .html extensions to non extensions
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+## SERVER ONLY (Doesn't work on localhost)
+
+## Redirect from www - non-www
+##RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+##RewriteRule ^(.*)$ http://%1/$ [R=301,L]
+
+## Redirect from non-www - www
+##RewriteCond %{HTTP_HOST} ^crudframe\.com$ [NC]
+##RewriteRule ^(.*)$ http://www.crudframe.com/$1 [L,R=301]
+
+## SSL Redirect
+##RewriteEngine On
+##RewriteCond %{HTTPS} != On
+##RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+
+## Create error pages
+
+## Error 404 page (page not found)
+ErrorDocument 404 http://localhost/ABSOLUTE/CrudFramework/SourceFiles/CrudFrame/View/StatusPages/error404.html
+
+## Error 500 page (internal server error)
+ErrorDocument 500 http://localhost/ABSOLUTE/CrudFramework/SourceFiles/CrudFrame/View/StatusPages/error500.html
+
+## Error 403 page (forbidden)
+ErrorDocument 403 http://localhost/ABSOLUTE/CrudFramework/SourceFiles/CrudFrame/View/StatusPages/error403.html
+
+
+## Redirect non-existing pages to index.php
+## Alternative to 404
+##Options +SymLinksIfOwnerMatch
+##RewriteEngine On
+##RewriteCond %{REQUEST_FILENAME} !-f
+##RewriteCond %{REQUEST_FILENAME} !-d
+##RewriteRule . /ABSOLUTE/CrudFramework/SourceFiles/public/index.php [L]
+
+
+## Redirect to a URL on the same domain or host
+##Redirect 301 "/test1.php" "/test2.php"
+
+## Redirect ot a different domain entirely
+##Redirect 301 "/test1.php" "http://example.com"
