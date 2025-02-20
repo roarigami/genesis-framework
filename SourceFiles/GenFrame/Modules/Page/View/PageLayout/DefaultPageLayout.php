@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include ROOT_PATH . "GenFrame/includes/Header/CrudMainHeader.php";?>
+<?php include ROOT_PATH . "GenFrame/includes/Header/GenMainHeader.php";?>
 
 <body>
 <!-- Main Navigation -->
-  <?//php include ROOT_PATH . "GenFrame/includes/Navigation/CrudMainNav.php" ;?>
+  <?php include ROOT_PATH . "GenFrame/includes/Navigation/GenMainNav.php" ;?>
 
 
 <!-- Page Content -->
@@ -13,7 +13,7 @@
 
 
 <!-- Main Footer -->
-  <?php include ROOT_PATH . "GenFrame/includes/Footer/CrudMainFooter.php" ;?>
+  <?php include ROOT_PATH . "GenFrame/includes/Footer/GenMainFooter.php" ;?>
 
 
 <!-- <div class="push"></div> -->

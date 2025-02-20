@@ -44,7 +44,7 @@ if($module == "page") {
   $controllerFile = ROOT_PATH . 'GenFrame/Controller/' . $mdln . '.php';
 
   if(file_exists($controllerFile)) {
-    var_dump($controllerFile);
+    //var_dump($controllerFile);
     //include $controllerFile;
     $controller = new PageController($pgr);
 

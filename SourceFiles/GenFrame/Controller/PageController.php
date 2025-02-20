@@ -22,7 +22,7 @@ class PageController extends \GenFrame\src\core\Controller
 
     $variables['pageObj'] = $pageObj;
     $variables['GenFramePath'] = $this->GenFramePath;
-    var_dump($variables);
+    //var_dump($variables);
 
     $this->template->view('PageLayout/DefaultPageLayout', $variables);
 
