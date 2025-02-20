@@ -25,8 +25,8 @@ RewriteRule ^ /%1 [NC,L,R]
 ##RewriteRule ^(.*)$ http://%1/$ [R=301,L]
 
 ## Redirect from non-www - www
-##RewriteCond %{HTTP_HOST} ^crudframe\.com$ [NC]
-##RewriteRule ^(.*)$ http://www.crudframe.com/$1 [L,R=301]
+##RewriteCond %{HTTP_HOST} ^genframe\.com$ [NC]
+##RewriteRule ^(.*)$ http://www.genframe.com/$1 [L,R=301]
 
 ## SSL Redirect
 ##RewriteEngine On
@@ -37,13 +37,13 @@ RewriteRule ^ /%1 [NC,L,R]
 ## Create error pages
 
 ## Error 404 page (page not found)
-ErrorDocument 404 http://localhost/ABSOLUTE/CrudFramework/SourceFiles/CrudFrame/View/StatusPages/error404.html
+ErrorDocument 404 http://localhost/ABSOLUTE/GenesisFramework/SourceFiles/GenFrame/View/StatusPages/error404.html
 
 ## Error 500 page (internal server error)
-ErrorDocument 500 http://localhost/ABSOLUTE/CrudFramework/SourceFiles/CrudFrame/View/StatusPages/error500.html
+ErrorDocument 500 http://localhost/ABSOLUTE/GenesisFramework/SourceFiles/GenFrame/View/StatusPages/error500.html
 
 ## Error 403 page (forbidden)
-ErrorDocument 403 http://localhost/ABSOLUTE/CrudFramework/SourceFiles/CrudFrame/View/StatusPages/error403.html
+ErrorDocument 403 http://localhost/ABSOLUTE/GenesisFramework/SourceFiles/GenFrame/View/StatusPages/error403.html
 
 
 ## Redirect non-existing pages to index.php
@@ -52,7 +52,7 @@ ErrorDocument 403 http://localhost/ABSOLUTE/CrudFramework/SourceFiles/CrudFrame/
 ##RewriteEngine On
 ##RewriteCond %{REQUEST_FILENAME} !-f
 ##RewriteCond %{REQUEST_FILENAME} !-d
-##RewriteRule . /ABSOLUTE/CrudFramework/SourceFiles/public/index.php [L]
+##RewriteRule . /ABSOLUTE/GenesisFramework/SourceFiles/public/index.php [L]
 
 
 ## Redirect to a URL on the same domain or host

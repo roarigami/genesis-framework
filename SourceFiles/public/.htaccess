@@ -5,4 +5,4 @@ RewriteBase /
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule (.+) /ABSOLUTE/CrudFramework/SourceFiles/public/index.php?page_name=$1  [NC,L]
+RewriteRule (.+) /ABSOLUTE/GenesisFramework/SourceFiles/public/index.php?page_name=$1  [NC,L]
