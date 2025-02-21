@@ -7,8 +7,8 @@ class Controller
 
 {
 
-public $GenFrameRoot = '/ABSOLUTE/GenFramework/SourceFiles/public/index.php?section=';
-public $GenFramePath = '/ABSOLUTE/GenFramework/SourceFiles/public';
+public $GenFrameRoot = '/ABSOLUTE/GenesisFramework/SourceFiles/public/index.php?section=';
+public $GenFramePath = '/ABSOLUTE/GenesisFramework/SourceFiles/public';
 protected $entityId;
 public $template;
 public $dbc;

@@ -10,7 +10,11 @@ class ValidationController extends \GenFrame\src\core\Controller
 
     function runBeforeAction() {
 
+<<<<<<< HEAD
+      if($_SESSION['GENESIS'] ?? false == true) {
+=======
       if($_SESSION['GEN'] ?? false == true) {
+>>>>>>> 982a9d266db9879df0a84dd7e5020686652f9295
         return true;
       }
       $action = $_GET['action'] ?? $_POST['action'] ?? 'default';
@@ -66,7 +70,11 @@ class ValidationController extends \GenFrame\src\core\Controller
             $auth = new Authentication();
             if($auth->checkLogin($email, $password)) {
                   //everyting is good
+<<<<<<< HEAD
+                  $_SESSION['GENESIS'] = 1;
+=======
                   $_SESSION['GEN'] = 1;
+>>>>>>> 982a9d266db9879df0a84dd7e5020686652f9295
                   header('Location: index.php');
                   exit();
             }
@@ -82,7 +90,11 @@ class ValidationController extends \GenFrame\src\core\Controller
     }
 
 
+<<<<<<< HEAD
+    function hasPermission($user, $permission = 'GENESIS'){
+=======
     function hasPermission($user, $permission = 'GEN'){
+>>>>>>> 982a9d266db9879df0a84dd7e5020686652f9295
 
       $permissions = explode(',', $user['permissions']);
         if(in_array($permission,$permissions,true)){

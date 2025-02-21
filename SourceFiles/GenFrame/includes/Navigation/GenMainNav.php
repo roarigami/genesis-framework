@@ -106,9 +106,10 @@
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar" style="width:100%;">
                 <ul class="navbar-nav ml-auto" style="flex:1;">
+
                     <li class="nav-item">
                         <a class="nav-link" href="/ABSOLUTE/GenesisFramework/SourceFiles/public/about">About</a>
-                    </li>
+                  </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/ABSOLUTE/GenesisFramework/SourceFiles/public/services">Services</a>
                     </li>
