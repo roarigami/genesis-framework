@@ -106,9 +106,9 @@
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar" style="width:100%;">
                 <ul class="navbar-nav ml-auto" style="flex:1;">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
                     </li>
