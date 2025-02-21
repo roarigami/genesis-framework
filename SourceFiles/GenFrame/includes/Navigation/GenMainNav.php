@@ -62,7 +62,7 @@
         }
 
 
-        .crud-container {
+        .gen-container {
           position:relative;
           width:100%;
           display:flex;
@@ -92,10 +92,10 @@
 <body>
 
     <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="crud-container">
+        <div class="gen-container">
             <!-- Brand/logo -->
-            <a class="navbar-brand" href="/ABSOLUTE/CrudFramework/SourceFiles/public/home">
-                Crud Frame
+            <a class="navbar-brand" href="/ABSOLUTE/GenesisFramework/SourceFiles/public/home">
+                Gen Frame
             </a>
 
             <!-- Toggler/collapsible Button -->
@@ -120,7 +120,7 @@
                     </li>
                 </ul>
                 <!-- Signup or Login button with an icon inside it -->
-                <a href="/ABSOLUTE/CrudFramework/SourceFiles/public/login" class="btn btn-login ml-md-2">
+                <a href="/ABSOLUTE/GenesisFramework/SourceFiles/public/login" class="btn btn-login ml-md-2">
                     <i class="fas fa-user"></i> Login/SignUp
                 </a>
             </div>

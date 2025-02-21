@@ -11,7 +11,7 @@ final class Database
   private $host = "localhost";
   private $user = "root";
   private $password = "";
-  private $database = "crud";//Crud Framework Database
+  private $database = "crud";//Genesis Framework Database
 
   private static $instance = null;
   private static $connection;

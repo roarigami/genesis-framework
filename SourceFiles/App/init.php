@@ -20,7 +20,7 @@ require_once ROOT_PATH . 'Config/loaders/autoloader.php';
 date_default_timezone_set('America/Toronto');
 
 //GET CURRENT VIEW PAGE DISPATCHER
-$action = $_GET['page_name'] ?? 'home';
+$action = $_GET['page_url'] ?? 'home';
 
 //var_dump($dbc);
 $domain = ($_SERVER['HTTP_HOST'] != 'localhost')?'.'.$_SERVER['HTTP_HOST']:false;
@@ -44,7 +44,7 @@ if($module == "page") {
   $controllerFile = ROOT_PATH . 'GenFrame/Controller/' . $mdln . '.php';
 
   if(file_exists($controllerFile)) {
-    var_dump($controllerFile);
+    //var_dump($controllerFile);
     //include $controllerFile;
     $controller = new PageController($pgr);
 
@@ -62,7 +62,7 @@ if($module == "page") {
 
 if(!empty($_POST)){
 
-  echo "It's working";
+  //echo "It's working";
   $validationController = new ValidationController();
   $validationController->template = new Template(MODULE_PATH . 'Page/View/PageLayout/DefaultPageLayout');
   //$validationController = setEntityId($router->entity_id);
@@ -88,9 +88,9 @@ if(!empty($_POST)){
 //
 // }
 
-// if($module == "crud") {
+// if($module == "genesis") {
 //
-//   //CRUD Router
+//   //GENESIS Router
 //   $dbh = Database::getInstance();
 //   $dbc = $dbh->getConnection();
 //

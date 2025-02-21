@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
 
-namespace CrudFrame\Model;
-class Page extends \CrudFrame\src\core\Infrastructure
+namespace GenFrame\Model;
+class Page extends \GenFrame\src\core\Infrastructure
 
 {
 

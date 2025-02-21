@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
 
-namespace CrudFrame\Model;
-class Login extends \CrudFrame\src\core\Database
+namespace GenFrame\Model;
+class Login extends \GenFrame\src\core\Database
 
 {
 
@@ -48,7 +48,7 @@ protected function getUser($email, $password){
      $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
      session_start();
-     $_SESSION['CRUD'] = $user["crud_id"];
+     $_SESSION['GENESIS'] = $user["gen_id"];
      $stmt = null;
 
   }

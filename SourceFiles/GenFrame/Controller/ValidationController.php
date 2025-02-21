@@ -10,7 +10,7 @@ class ValidationController extends \GenFrame\src\core\Controller
 
     function runBeforeAction() {
 
-      if($_SESSION['CRUD'] ?? false == true) {
+      if($_SESSION['GENESIS'] ?? false == true) {
         return true;
       }
       $action = $_GET['action'] ?? $_POST['action'] ?? 'default';
@@ -66,7 +66,7 @@ class ValidationController extends \GenFrame\src\core\Controller
             $auth = new Authentication();
             if($auth->checkLogin($email, $password)) {
                   //everyting is good
-                  $_SESSION['CRUD'] = 1;
+                  $_SESSION['GENESIS'] = 1;
                   header('Location: index.php');
                   exit();
             }
@@ -82,7 +82,7 @@ class ValidationController extends \GenFrame\src\core\Controller
     }
 
 
-    function hasPermission($user, $permission = 'CRUD'){
+    function hasPermission($user, $permission = 'GENESIS'){
 
       $permissions = explode(',', $user['permissions']);
         if(in_array($permission,$permissions,true)){
