@@ -1,6 +1,10 @@
 <head>
   <meta charset="utf-8">
+<<<<<<< HEAD
    <title><?=$pageObj->headtitle;?> | Genesis | Global</title>
+=======
+   <title><?=$pageObj->headtitle;?> | Gen | Global</title>
+>>>>>>> 982a9d266db9879df0a84dd7e5020686652f9295
    <link rel = "icon" href = "/ABSOLUTE/GenesisFramework/SourceFiles/GenFrame/UI/assets/img/crudLogo.png"/>
 
    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, height=device-height">

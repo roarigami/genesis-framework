@@ -87,7 +87,7 @@
                 border: 1px solid #9C27B0;
             }
     </style>
-</head>
+
 
 <body>
 
