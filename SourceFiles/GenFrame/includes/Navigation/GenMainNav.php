@@ -107,16 +107,13 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar" style="width:100%;">
                 <ul class="navbar-nav ml-auto" style="flex:1;">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="/ABSOLUTE/GenesisFramework/SourceFiles/public/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="/ABSOLUTE/GenesisFramework/SourceFiles/public/services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="/ABSOLUTE/GenesisFramework/SourceFiles/public/contact">Contact</a>
                     </li>
                 </ul>
                 <!-- Signup or Login button with an icon inside it -->
